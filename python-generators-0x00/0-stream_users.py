@@ -10,6 +10,7 @@ import os
 
 DB_PATH = os.path.join(os.path.dirname(__file__), "users.db")
 
+
 def stream_users():
     """Generator function to yield users one by one from the database"""
     if not os.path.exists(DB_PATH):
